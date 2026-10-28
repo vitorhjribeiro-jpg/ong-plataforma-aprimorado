@@ -11,7 +11,7 @@ em etapas futuras da disciplina, aprofundamento em **CSS3** e **JavaScript**.
 > para fins de estudo. Não há back-end, banco de dados, autenticação ou
 > gateway de pagamento reais.
 >
- **Site publicado:** https://vitorhjribeiro-jpg.github.io/ong-plataforma-aprimorado/
+> **Site Publicado:** https://vitorhjribeiro-jpg.github.io/ong-plataforma-aprimorado/
 ---
 
 ## Sumário
