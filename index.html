@@ -1,0 +1,415 @@
+<!-- Vitor Hugo de Jesus Ribeiro -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Florescer | Educação, inclusão e transformação social</title>
+    <meta name="description" content="Conheça o Instituto Florescer: nossa missão, projetos sociais, formas de voluntariado e de doação. Juntos por mais educação, inclusão e sustentabilidade.">
+    <meta name="author" content="Instituto Florescer">
+    <link rel="stylesheet" href="assets/css/base/variaveis.css">
+    <link rel="stylesheet" href="assets/css/base/reset-tipografia.css">
+    <link rel="stylesheet" href="assets/css/layout/grid.css">
+    <link rel="stylesheet" href="assets/css/layout/navegacao.css">
+    <link rel="stylesheet" href="assets/css/componentes/botoes.css">
+    <link rel="stylesheet" href="assets/css/componentes/cards.css">
+    <link rel="stylesheet" href="assets/css/componentes/badges-tags.css">
+    <link rel="stylesheet" href="assets/css/componentes/formularios.css">
+    <link rel="stylesheet" href="assets/css/componentes/feedback.css">
+    <link rel="stylesheet" href="assets/css/responsivo.css">
+</head>
+<body>
+
+    <a href="#conteudo-principal" class="pular-para-conteudo">Pular para o conteúdo principal</a>
+
+    <!-- cabeçalho -->
+    <header class="cabecalho-site">
+        <div class="container cabecalho-site__interno">
+            <a href="index.html" class="logotipo" aria-label="Instituto Florescer - página inicial">
+                <img src="assets/images/logo/logo-instituto-florescer.png"
+                     alt="Logotipo do Instituto Florescer: um broto de planta dentro de um círculo verde"
+                     width="48" height="48">
+                <span class="logotipo__texto">Instituto Florescer</span>
+            </a>
+
+            <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+                <span class="menu-toggle__barra"></span><span class="menu-toggle__barra"></span><span class="menu-toggle__barra"></span>
+            </button>
+
+            <nav class="navegacao-principal" id="menu-principal" aria-label="Navegação principal">
+                <ul class="navegacao-principal__lista">
+                    <li><a href="index.html" aria-current="page">Início</a></li>
+                    <li class="tem-submenu">
+                        <button type="button" class="submenu-botao" aria-expanded="false" aria-haspopup="true">Projetos</button>
+                        <ul class="submenu">
+                            <li><a href="projetos.html">Todos os projetos</a></li>
+                            <li><a href="projetos.html#projeto-educar-para-crescer">Educar para Crescer</a></li>
+                            <li><a href="projetos.html#projeto-caminhos-da-inclusao">Caminhos da Inclusão</a></li>
+                            <li><a href="projetos.html#projeto-apoio-as-familias">Apoio às Famílias</a></li>
+                            <li><a href="projetos.html#projeto-horta-comunitaria-raizes">Horta Comunitária Raízes</a></li>
+                            <li><a href="projetos.html#projeto-jovem-aprendiz-digital">Jovem Aprendiz Digital</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="cadastro.html">Cadastre-se</a></li>
+                    <li><a href="index.html#secao-doacoes" class="botao-doar">Doe agora</a></li>
+                    <li><a href="index.html#secao-contato">Contato</a></li>
+                    <li><a href="guia-de-estilo.html">Guia de estilo</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo-principal">
+
+        <!-- apresentação -->
+        <section class="secao-hero" aria-labelledby="titulo-hero">
+            <div class="container secao-hero__interno">
+                <div class="secao-hero__texto">
+                    <h1 id="titulo-hero">Educação e oportunidade para quem mais precisa</h1>
+                    <p class="secao-hero__destaque">
+                        Há 12 anos o Instituto Florescer atua em comunidades vulneráveis,
+                        conectando famílias, voluntários e apoiadores em torno de projetos
+                        de educação, inclusão social e desenvolvimento comunitário.
+                    </p>
+                    <div class="secao-hero__acoes">
+                        <a href="cadastro.html" class="botao botao--primario">Quero ser voluntário</a>
+                        <a href="#secao-doacoes" class="botao botao--secundario">Quero doar</a>
+                    </div>
+                </div>
+                <figure class="secao-hero__imagem">
+                    <img src="assets/images/galeria/crianca-atividade-educativa.jpg"
+                         alt="Criança sorrindo enquanto participa de atividade educativa em sala de aula comunitária"
+                         width="560" height="420" loading="eager">
+                    <figcaption>Atividade do projeto Educar para Crescer, em São Miguel Paulista.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- missão e valores-->
+        <section class="secao secao--institucional" id="secao-sobre" aria-labelledby="titulo-sobre">
+            <div class="container">
+                <h2 id="titulo-sobre">Quem somos</h2>
+                <p>
+                    O <strong>Instituto Florescer</strong> é uma organização não governamental,
+                    sem fins lucrativos, fundada em 2014 na Zona Leste de São Paulo. Atuamos em
+                    parceria com famílias, escolas públicas e empresas para ampliar o acesso à
+                    educação de qualidade, à inclusão social e a práticas sustentáveis nas
+                    comunidades onde estamos presentes.
+                </p>
+
+                <div class="grade-cartoes grade-cartoes--tres-colunas">
+                    <article class="cartao">
+                        <h3>Missão</h3>
+                        <p>Promover educação, inclusão social e desenvolvimento comunitário,
+                        ampliando oportunidades para crianças, jovens e famílias em
+                        situação de vulnerabilidade social.</p>
+                    </article>
+
+                    <article class="cartao">
+                        <h3>Visão</h3>
+                        <p>Ser reconhecida, até 2030, como referência regional em projetos
+                        sociais integrados, medindo e comunicando com transparência o
+                        impacto gerado em cada comunidade atendida.</p>
+                    </article>
+
+                    <article class="cartao">
+                        <h3>Valores</h3>
+                        <ul class="lista-valores">
+                            <li>Transparência em todas as ações e prestações de contas;</li>
+                            <li>Respeito à dignidade e à autonomia das famílias atendidas;</li>
+                            <li>Colaboração entre voluntários, doadores e comunidade;</li>
+                            <li>Compromisso com resultados mensuráveis;</li>
+                            <li>Sustentabilidade social, ambiental e financeira.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- histórias e conquistas -->
+        <section class="secao" id="secao-historia" aria-labelledby="titulo-historia">
+            <div class="container secao-historia__interno">
+                <div>
+                    <h2 id="titulo-historia">Nossa história</h2>
+                    <p>
+                        O Instituto nasceu de um grupo de dez voluntários que oferecia reforço
+                        escolar aos sábados em um salão de igreja comunitário. Em <time datetime="2014">2014</time>,
+                        formalizamos a organização como ONG e, desde então, ampliamos nossa atuação
+                        para quatro frentes: educação, inclusão social, apoio a famílias e
+                        sustentabilidade.
+                    </p>
+                    <p>
+                        Em <time datetime="2019">2019</time> inauguramos nosso primeiro centro
+                        comunitário próprio e, em <time datetime="2023">2023</time>, ultrapassamos
+                        a marca de mil famílias atendidas anualmente.
+                    </p>
+                </div>
+
+                <aside class="cartao cartao--indicadores" aria-labelledby="titulo-indicadores">
+                    <h2 id="titulo-indicadores">Nossos números em 2026</h2>
+                    <dl class="lista-indicadores">
+                        <div>
+                            <dt>Famílias atendidas por ano</dt>
+                            <dd>1.240</dd>
+                        </div>
+                        <div>
+                            <dt>Voluntários ativos</dt>
+                            <dd>186</dd>
+                        </div>
+                        <div>
+                            <dt>Projetos em andamento</dt>
+                            <dd>7</dd>
+                        </div>
+                        <div>
+                            <dt>Anos de atuação</dt>
+                            <dd>12</dd>
+                        </div>
+                    </dl>
+                    <p class="cartao__nota">
+                        Indicadores apurados com base no relatório de atividades de 2025.
+                        Consulte os <a href="projetos.html#secao-transparencia">relatórios completos de transparência</a>.
+                    </p>
+                </aside>
+            </div>
+        </section>
+
+        <!-- destaques dos projetos -->
+        <section class="secao secao--destacada" id="secao-projetos-destaque" aria-labelledby="titulo-projetos-destaque">
+            <div class="container">
+                <h2 id="titulo-projetos-destaque">Projetos em destaque</h2>
+                <p>Conheça algumas das frentes de atuação do Instituto Florescer. A lista completa,
+                com objetivos, indicadores e resultados de cada projeto, está disponível na
+                <a href="projetos.html">página de projetos</a>.</p>
+
+                <div class="grade-cartoes grade-cartoes--tres-colunas">
+                    <article class="cartao cartao--projeto">
+                        <figure>
+                            <img src="assets/images/projetos/projeto-educacao.jpg"
+                                 alt="Voluntária auxiliando um grupo de crianças em atividade de leitura"
+                                 width="360" height="240" loading="lazy">
+                        </figure>
+                        <h3>Educar para Crescer</h3>
+                        <p class="badges"><span class="badge badge--educacao">Educação</span></p>
+                        <p>Reforço escolar e incentivo à leitura para crianças de 6 a 12 anos,
+                        em parceria com escolas públicas municipais.</p>
+                        <a href="projetos.html#projeto-educar-para-crescer">Conhecer o projeto</a>
+                    </article>
+
+                    <article class="cartao cartao--projeto">
+                        <figure>
+                            <img src="assets/images/projetos/projeto-inclusao.jpg"
+                                 alt="Jovens com deficiência participando de oficina de inclusão profissional"
+                                 width="360" height="240" loading="lazy">
+                        </figure>
+                        <h3>Caminhos da Inclusão</h3>
+                        <p class="badges"><span class="badge badge--inclusao">Inclusão social</span></p>
+                        <p>Oficinas de capacitação profissional e inclusão no mercado de trabalho
+                        para jovens e adultos com deficiência.</p>
+                        <a href="projetos.html#projeto-caminhos-da-inclusao">Conhecer o projeto</a>
+                    </article>
+
+                    <article class="cartao cartao--projeto">
+                        <figure>
+                            <img src="assets/images/projetos/projeto-sustentabilidade.jpg"
+                                 alt="Voluntários cuidando de horta comunitária"
+                                 width="360" height="240" loading="lazy">
+                        </figure>
+                        <h3>Horta Comunitária Raízes</h3>
+                        <p class="badges"><span class="badge badge--sustentabilidade">Sustentabilidade</span></p>
+                        <p>Hortas coletivas que geram renda complementar e promovem educação
+                        ambiental para famílias da comunidade.</p>
+                        <a href="projetos.html#projeto-horta-comunitaria-raizes">Conhecer o projeto</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- voluntariado -->
+        <section class="secao" id="secao-voluntariado" aria-labelledby="titulo-voluntariado">
+            <div class="container secao-voluntariado__interno">
+                <div>
+                    <h2 id="titulo-voluntariado">Seja um voluntário</h2>
+                    <p>
+                        Precisamos de pessoas dispostas a doar algumas horas por semana ou por mês
+                        em atividades educativas, administrativas, de comunicação ou de apoio a
+                        eventos. Não é necessário ter experiência prévia: oferecemos treinamento
+                        inicial para todas as áreas de atuação.
+                    </p>
+                    <ul class="lista-simples">
+                        <li>Reforço escolar e contação de histórias;</li>
+                        <li>Oficinas de capacitação profissional;</li>
+                        <li>Apoio em eventos e campanhas de arrecadação;</li>
+                        <li>Produção de conteúdo e comunicação;</li>
+                        <li>Apoio administrativo e financeiro.</li>
+                    </ul>
+                    <a href="cadastro.html" class="botao botao--primario">Ver oportunidades e se cadastrar</a>
+                </div>
+                <figure class="secao-voluntariado__imagem">
+                    <img src="assets/images/equipe/voluntarios-em-atividade.jpg"
+                         alt="Grupo de voluntários reunidos antes de uma atividade comunitária"
+                         width="480" height="360" loading="lazy">
+                    <figcaption>Equipe de voluntários do projeto Caminhos da Inclusão, turma de 2025.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- doações -->
+        <section class="secao secao--destacada" id="secao-doacoes" aria-labelledby="titulo-doacoes">
+            <div class="container">
+                <h2 id="titulo-doacoes">Como você pode apoiar</h2>
+                <p>
+                    Sua contribuição financeira sustenta a compra de material escolar, alimentação
+                    das oficinas, transporte de famílias e manutenção do centro comunitário. Toda
+                    doação é registrada e prestada em contas nos relatórios de transparência.
+                </p>
+
+                <div class="grade-cartoes grade-cartoes--tres-colunas">
+                    <article class="cartao">
+                        <h3>Doação única</h3>
+                        <p>Contribua uma única vez com o valor que puder, via Pix ou transferência
+                        bancária. Cada real apoia diretamente um projeto em andamento.</p>
+                    </article>
+                    <article class="cartao">
+                        <h3>Doação recorrente</h3>
+                        <p>Torne-se um apoiador mensal e ajude a garantir a continuidade dos
+                        projetos ao longo do ano, com previsibilidade de orçamento.</p>
+                    </article>
+                    <article class="cartao">
+                        <h3>Doação de materiais</h3>
+                        <p>Materiais escolares, alimentos não perecíveis e equipamentos também são
+                        bem-vindos. Consulte a lista de itens prioritários com nossa equipe.</p>
+                    </article>
+                </div>
+
+                <p class="cartao__nota cartao__nota--destaque">
+                    <strong>Observação acadêmica:</strong> este projeto não implementa um gateway de
+                    pagamento real. As informações acima são conceituais, para fins de estudo de
+                    estrutura HTML5.
+                </p>
+            </div>
+        </section>
+
+        <!-- notícias -->
+        <section class="secao" id="secao-noticias" aria-labelledby="titulo-noticias">
+            <div class="container">
+                <h2 id="titulo-noticias">Notícias e atualizações</h2>
+
+                <div class="grade-cartoes grade-cartoes--tres-colunas">
+                    <article class="cartao">
+                        <p class="cartao__data"><time datetime="2026-08-14">14 de agosto de 2026</time></p>
+                        <h3>Instituto Florescer amplia turmas de reforço escolar</h3>
+                        <p>A partir de setembro, o projeto Educar para Crescer passa a atender mais
+                        duas escolas da região, beneficiando 90 crianças a mais.</p>
+                    </article>
+
+                    <article class="cartao">
+                        <p class="cartao__data"><time datetime="2026-06-02">2 de junho de 2026</time></p>
+                        <h3>Campanha do Agasalho arrecada recorde de doações</h3>
+                        <p>Foram arrecadados mais de 2.300 itens de roupas de inverno, distribuídos
+                        entre as famílias atendidas pelos projetos sociais.</p>
+                    </article>
+
+                    <article class="cartao">
+                        <p class="cartao__data"><time datetime="2026-03-20">20 de março de 2026</time></p>
+                        <h3>Relatório anual de 2025 já está disponível</h3>
+                        <p>Publicamos o relatório de atividades e transparência financeira referente
+                        ao ano de 2025. Confira na página de projetos.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== GALERIA ===================== -->
+        <section class="secao secao--destacada" id="secao-galeria" aria-labelledby="titulo-galeria">
+            <div class="container">
+                <h2 id="titulo-galeria">Galeria</h2>
+                <div class="grade-galeria">
+                    <figure>
+                        <img src="assets/images/galeria/oficina-capacitacao.jpg"
+                             alt="Participantes durante oficina de capacitação profissional"
+                             width="280" height="200" loading="lazy">
+                        <figcaption>Oficina de capacitação — projeto Caminhos da Inclusão.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/images/galeria/horta-comunitaria.jpg"
+                             alt="Voluntários colhendo verduras em horta comunitária"
+                             width="280" height="200" loading="lazy">
+                        <figcaption>Colheita na horta comunitária Raízes.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/images/galeria/entrega-material-escolar.jpg"
+                             alt="Entrega de kits de material escolar para famílias atendidas"
+                             width="280" height="200" loading="lazy">
+                        <figcaption>Entrega de kits escolares no início do ano letivo.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/images/galeria/evento-comunitario.jpg"
+                             alt="Famílias reunidas em evento comunitário de confraternização"
+                             width="280" height="200" loading="lazy">
+                        <figcaption>Encontro comunitário de encerramento de semestre.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- informações de contato -->
+        <section class="secao" id="secao-contato" aria-labelledby="titulo-contato">
+            <div class="container secao-contato__interno">
+                <div>
+                    <h2 id="titulo-contato">Fale conosco</h2>
+                    <address class="endereco-contato">
+                        <p><strong>Instituto Florescer</strong></p>
+                        <p>Rua das Acácias, 245 — Jardim Esperança<br>
+                        São Miguel Paulista, São Paulo — SP<br>
+                        CEP 08010-000</p>
+                        <p>Telefone: <a href="tel:+551130000000">(11) 3000-0000</a></p>
+                        <p>E-mail: <a href="mailto:contato@institutoflorescer.org.br">contato@institutoflorescer.org.br</a></p>
+                    </address>
+                    <p class="cartao__nota">
+                        <em>Dados de contato fictícios, criados exclusivamente para fins deste
+                        projeto acadêmico.</em>
+                    </p>
+                </div>
+                <div>
+                    <h3>Horário de atendimento</h3>
+                    <p>Segunda a sexta-feira, das 9h às 17h.</p>
+                    <h3>Redes sociais</h3>
+                    <ul class="lista-redes-sociais">
+                        <li><a href="#">Instagram do Instituto Florescer</a></li>
+                        <li><a href="#">Facebook do Instituto Florescer</a></li>
+                        <li><a href="#">Canal no YouTube do Instituto Florescer</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- rodapé-->
+    <footer class="rodape-site">
+        <div class="container rodape-site__interno">
+            <div>
+                <p><strong>Instituto Florescer</strong></p>
+                <p>Educação, inclusão social e desenvolvimento comunitário desde 2014.</p>
+            </div>
+            <nav aria-label="Navegação do rodapé">
+                <ul class="rodape-site__lista">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="cadastro.html">Cadastre-se</a></li>
+                    <li><a href="projetos.html#secao-transparencia">Transparência</a></li>
+                </ul>
+            </nav>
+            <p class="rodape-site__copyright">
+                &copy; <time datetime="2026">2026</time> Instituto Florescer. Projeto acadêmico
+                fictício, sem fins lucrativos reais.
+            </p>
+        </div>
+    </footer>
+
+    
+    <div class="toast-area" id="toast-area" aria-live="polite"></div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

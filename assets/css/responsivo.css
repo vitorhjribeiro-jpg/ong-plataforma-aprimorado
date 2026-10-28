@@ -1,0 +1,53 @@
+/* ==========================================================================
+   RESPONSIVIDADE — 5 breakpoints, abordagem mobile-first
+   480 (mobile grande) · 640 (tablet pequeno) · 768 (tablet) · 1024 (desktop) · 1280 (desktop largo)
+   ========================================================================== */
+@media (min-width: 480px) {
+    .grade-galeria { grid-template-columns: repeat(2, 1fr); }
+    .lista-indicadores--linha { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 640px) {
+    h1 { font-size: 2.75rem; }
+    .grade-cartoes { grid-template-columns: repeat(2, 1fr); }
+    .cartao-projeto { flex-direction: row; }
+    .cartao-projeto__imagem { flex: 0 0 38%; }
+    .cartao-projeto__conteudo { flex: 1; }
+    .rodape-site__interno { grid-template-columns: 1fr 1fr; }
+    .col-sm-6 { grid-column: span 6 !important; } .col-sm-4 { grid-column: span 4 !important; } .col-sm-12 { grid-column: span 12 !important; }
+}
+
+@media (min-width: 768px) {
+    .secao { padding: var(--espaco-8) 0; }
+    .secao-hero { padding: var(--espaco-8) 0; }
+    .secao-hero__interno, .secao-historia__interno, .secao-voluntariado__interno, .secao-contato__interno { flex-direction: row; align-items: center; }
+    .secao-historia__interno, .secao-voluntariado__interno, .secao-contato__interno { align-items: flex-start; }
+    .secao-hero__interno > *, .secao-historia__interno > *, .secao-voluntariado__interno > *, .secao-contato__interno > * { flex: 1 1 0; }
+    .col-md-3 { grid-column: span 3 !important; } .col-md-4 { grid-column: span 4 !important; }
+    .col-md-6 { grid-column: span 6 !important; } .col-md-8 { grid-column: span 8 !important; }
+    .lista-indicadores--linha { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (min-width: 1024px) {
+    .grade-cartoes--tres-colunas { grid-template-columns: repeat(3, 1fr); }
+    .grade-galeria { grid-template-columns: repeat(4, 1fr); }
+    .grade-galeria figure:first-child { grid-column: span 2; grid-row: span 2; }
+    .grade-galeria figure:first-child img { aspect-ratio: auto; }
+    .rodape-site__interno { grid-template-columns: 2fr 1fr; }
+    .col-lg-3 { grid-column: span 3 !important; } .col-lg-4 { grid-column: span 4 !important; }
+    .col-lg-6 { grid-column: span 6 !important; } .col-lg-8 { grid-column: span 8 !important; }
+}
+
+@media (min-width: 1280px) {
+    .container { max-width: 1240px; }
+    h1 { font-size: 3.25rem; }
+}
+
+@media (max-width: 479px) {
+    h1 { font-size: var(--texto-2xl); }
+    h2 { font-size: var(--texto-xl); }
+    h3 { font-size: var(--texto-lg); }
+    .logotipo__texto { font-size: var(--texto-base); }
+    .acoes-formulario .botao, .secao-hero__acoes .botao { width: 100%; }
+    .modal__caixa { padding: var(--espaco-3); }
+}

@@ -1,0 +1,25 @@
+/* ==========================================================================
+   BADGES E TAGS — categorização
+   ========================================================================== */
+.badges, .lista-categorias { display: flex; flex-wrap: wrap; gap: var(--espaco-1); list-style: none; padding: 0; margin: 0 0 var(--espaco-2); }
+
+.badge {
+    display: inline-block; padding: 2px 12px; border-radius: var(--raio-pilula);
+    font-size: var(--texto-xs); font-weight: 700; line-height: 1.7; border: 1px solid transparent;
+}
+.badge--educacao { background: #E2ECFA; color: #174A86; }
+.badge--inclusao { background: #EBE3F7; color: #4B2C86; }
+.badge--familias { background: #FBE3E1; color: #8E1D17; }
+.badge--sustentabilidade { background: var(--cor-primaria-100); color: var(--cor-primaria-escura); }
+.badge--comunidade { background: var(--cor-secundaria-100); color: var(--cor-secundaria-escura); }
+.badge--neutro { background: var(--cor-fundo-destacado); color: var(--cor-texto-suave); }
+
+/* Tags: filtros/categorias clicáveis (com remoção opcional) */
+.tag, .lista-categorias a {
+    display: inline-flex; align-items: center; gap: 6px; padding: 4px 14px;
+    background: var(--cor-cartao); border: 1px solid var(--cor-borda); border-radius: var(--raio-pilula);
+    font-size: var(--texto-sm); color: var(--cor-texto); text-decoration: none;
+    transition: background-color var(--transicao), border-color var(--transicao);
+}
+.tag:hover, .lista-categorias a:hover { background: var(--cor-primaria-100); border-color: var(--cor-primaria); color: var(--cor-primaria-escura); }
+.tag--ativa { background: var(--cor-primaria); border-color: var(--cor-primaria); color: #fff; }

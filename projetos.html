@@ -1,0 +1,343 @@
+<!-- Vitor Hugo de Jesus Ribeiro -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos Projetos | Instituto Florescer</title>
+    <meta name="description" content="Conheça os projetos sociais do Instituto Florescer nas áreas de educação, inclusão, apoio a famílias e sustentabilidade, com objetivos, indicadores e resultados.">
+    <meta name="author" content="Instituto Florescer">
+    <link rel="stylesheet" href="assets/css/base/variaveis.css">
+    <link rel="stylesheet" href="assets/css/base/reset-tipografia.css">
+    <link rel="stylesheet" href="assets/css/layout/grid.css">
+    <link rel="stylesheet" href="assets/css/layout/navegacao.css">
+    <link rel="stylesheet" href="assets/css/componentes/botoes.css">
+    <link rel="stylesheet" href="assets/css/componentes/cards.css">
+    <link rel="stylesheet" href="assets/css/componentes/badges-tags.css">
+    <link rel="stylesheet" href="assets/css/componentes/formularios.css">
+    <link rel="stylesheet" href="assets/css/componentes/feedback.css">
+    <link rel="stylesheet" href="assets/css/responsivo.css">
+</head>
+<body>
+
+    <a href="#conteudo-principal" class="pular-para-conteudo">Pular para o conteúdo principal</a>
+
+    <header class="cabecalho-site">
+        <div class="container cabecalho-site__interno">
+            <a href="index.html" class="logotipo" aria-label="Instituto Florescer - página inicial">
+                <img src="assets/images/logo/logo-instituto-florescer.png"
+                     alt="Logotipo do Instituto Florescer: um broto de planta dentro de um círculo verde"
+                     width="48" height="48">
+                <span class="logotipo__texto">Instituto Florescer</span>
+            </a>
+
+            <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+                <span class="menu-toggle__barra"></span><span class="menu-toggle__barra"></span><span class="menu-toggle__barra"></span>
+            </button>
+
+            <nav class="navegacao-principal" id="menu-principal" aria-label="Navegação principal">
+                <ul class="navegacao-principal__lista">
+                    <li><a href="index.html">Início</a></li>
+                    <li class="tem-submenu">
+                        <button type="button" class="submenu-botao" aria-expanded="false" aria-haspopup="true">Projetos</button>
+                        <ul class="submenu">
+                            <li><a href="projetos.html" aria-current="page">Todos os projetos</a></li>
+                            <li><a href="projetos.html#projeto-educar-para-crescer">Educar para Crescer</a></li>
+                            <li><a href="projetos.html#projeto-caminhos-da-inclusao">Caminhos da Inclusão</a></li>
+                            <li><a href="projetos.html#projeto-apoio-as-familias">Apoio às Famílias</a></li>
+                            <li><a href="projetos.html#projeto-horta-comunitaria-raizes">Horta Comunitária Raízes</a></li>
+                            <li><a href="projetos.html#projeto-jovem-aprendiz-digital">Jovem Aprendiz Digital</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="cadastro.html">Cadastre-se</a></li>
+                    <li><a href="index.html#secao-doacoes" class="botao-doar">Doe agora</a></li>
+                    <li><a href="index.html#secao-contato">Contato</a></li>
+                    <li><a href="guia-de-estilo.html">Guia de estilo</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo-principal">
+
+        <section class="secao-hero secao-hero--interna" aria-labelledby="titulo-pagina">
+            <div class="container">
+                <h1 id="titulo-pagina">Nossos projetos sociais</h1>
+                <p class="secao-hero__destaque">
+                    Cada projeto do Instituto Florescer nasce de uma necessidade concreta
+                    identificada junto às famílias da comunidade. Conheça os objetivos, o
+                    público beneficiado e os resultados de cada frente de atuação.
+                </p>
+            </div>
+        </section>
+
+        <!-- filtro de categorias -->
+        <section class="secao" aria-labelledby="titulo-categorias">
+            <div class="container">
+                <h2 id="titulo-categorias">Categorias de projetos</h2>
+                <nav aria-label="Categorias de projetos">
+                    <ul class="lista-categorias">
+                        <li><a href="#projeto-educar-para-crescer">Educação</a></li>
+                        <li><a href="#projeto-caminhos-da-inclusao">Inclusão social</a></li>
+                        <li><a href="#projeto-apoio-as-familias">Apoio a famílias</a></li>
+                        <li><a href="#projeto-horta-comunitaria-raizes">Sustentabilidade</a></li>
+                        <li><a href="#projeto-jovem-aprendiz-digital">Desenvolvimento comunitário</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!-- lista de projetos -->
+        <section class="secao secao--destacada" aria-labelledby="titulo-lista-projetos">
+            <div class="container">
+                <h2 id="titulo-lista-projetos">Lista de projetos</h2>
+
+                <article class="cartao-projeto" id="projeto-educar-para-crescer">
+                    <figure class="cartao-projeto__imagem">
+                        <img src="assets/images/projetos/projeto-educacao.jpg"
+                             alt="Voluntária auxiliando um grupo de crianças em atividade de leitura"
+                             width="400" height="280" loading="lazy">
+                        <figcaption>Atividade de reforço escolar na E.M. Jardim das Rosas.</figcaption>
+                    </figure>
+                    <div class="cartao-projeto__conteudo">
+                        <p class="cartao-projeto__categoria"><span class="badge badge--educacao">Educação</span></p>
+                        <h3>Educar para Crescer</h3>
+                        <p>
+                            Reforço escolar, incentivo à leitura e acompanhamento pedagógico para
+                            crianças de 6 a 12 anos, em parceria com escolas públicas municipais
+                            da Zona Leste de São Paulo.
+                        </p>
+                        <h4>Objetivos</h4>
+                        <ul class="lista-simples">
+                            <li>Reduzir a defasagem escolar em língua portuguesa e matemática;</li>
+                            <li>Estimular o hábito de leitura desde a infância;</li>
+                            <li>Apoiar famílias no acompanhamento escolar dos filhos.</li>
+                        </ul>
+                        <h4>Público beneficiado</h4>
+                        <p>320 crianças de 6 a 12 anos, matriculadas em três escolas municipais parceiras.</p>
+                        <h4>Localização</h4>
+                        <p>São Miguel Paulista e Itaim Paulista, São Paulo — SP.</p>
+                        <h4>Indicadores e resultados (2025)</h4>
+                        <dl class="lista-indicadores lista-indicadores--linha">
+                            <div><dt>Crianças atendidas</dt><dd>320</dd></div>
+                            <div><dt>Melhora média em leitura</dt><dd>+38%</dd></div>
+                            <div><dt>Frequência escolar</dt><dd>96%</dd></div>
+                        </dl>
+                    </div>
+                </article>
+
+                <article class="cartao-projeto" id="projeto-caminhos-da-inclusao">
+                    <figure class="cartao-projeto__imagem">
+                        <img src="assets/images/projetos/projeto-inclusao.jpg"
+                             alt="Jovens com deficiência participando de oficina de inclusão profissional"
+                             width="400" height="280" loading="lazy">
+                        <figcaption>Oficina de capacitação em informática básica.</figcaption>
+                    </figure>
+                    <div class="cartao-projeto__conteudo">
+                        <p class="cartao-projeto__categoria"><span class="badge badge--inclusao">Inclusão social</span></p>
+                        <h3>Caminhos da Inclusão</h3>
+                        <p>
+                            Oficinas de capacitação profissional e apoio à colocação no mercado de
+                            trabalho para jovens e adultos com deficiência, em parceria com
+                            empresas locais.
+                        </p>
+                        <h4>Objetivos</h4>
+                        <ul class="lista-simples">
+                            <li>Qualificar profissionalmente pessoas com deficiência;</li>
+                            <li>Sensibilizar empresas parceiras sobre inclusão no trabalho;</li>
+                            <li>Realizar acompanhamento pós-contratação.</li>
+                        </ul>
+                        <h4>Público beneficiado</h4>
+                        <p>85 jovens e adultos com deficiência física, sensorial ou intelectual.</p>
+                        <h4>Localização</h4>
+                        <p>Centro comunitário do Instituto Florescer, São Miguel Paulista — SP.</p>
+                        <h4>Indicadores e resultados (2025)</h4>
+                        <dl class="lista-indicadores lista-indicadores--linha">
+                            <div><dt>Pessoas capacitadas</dt><dd>85</dd></div>
+                            <div><dt>Contratações realizadas</dt><dd>41</dd></div>
+                            <div><dt>Empresas parceiras</dt><dd>12</dd></div>
+                        </dl>
+                    </div>
+                </article>
+
+                <article class="cartao-projeto" id="projeto-apoio-as-familias">
+                    <figure class="cartao-projeto__imagem">
+                        <img src="assets/images/projetos/projeto-apoio-familias.jpg"
+                             alt="Assistente social conversando com uma família em atendimento"
+                             width="400" height="280" loading="lazy">
+                        <figcaption>Atendimento socioassistencial às famílias da comunidade.</figcaption>
+                    </figure>
+                    <div class="cartao-projeto__conteudo">
+                        <p class="cartao-projeto__categoria"><span class="badge badge--familias">Apoio a famílias</span></p>
+                        <h3>Rede de Apoio Familiar</h3>
+                        <p>
+                            Atendimento socioassistencial, orientação sobre direitos e acesso a
+                            programas sociais, além de doação de cestas básicas para famílias em
+                            situação de vulnerabilidade.
+                        </p>
+                        <h4>Objetivos</h4>
+                        <ul class="lista-simples">
+                            <li>Orientar famílias sobre benefícios e programas sociais disponíveis;</li>
+                            <li>Distribuir cestas básicas mensais para famílias cadastradas;</li>
+                            <li>Realizar encaminhamentos para rede de saúde e assistência social.</li>
+                        </ul>
+                        <h4>Público beneficiado</h4>
+                        <p>410 famílias cadastradas em situação de vulnerabilidade social.</p>
+                        <h4>Localização</h4>
+                        <p>São Miguel Paulista, Itaim Paulista e Guaianases, São Paulo — SP.</p>
+                        <h4>Indicadores e resultados (2025)</h4>
+                        <dl class="lista-indicadores lista-indicadores--linha">
+                            <div><dt>Famílias atendidas</dt><dd>410</dd></div>
+                            <div><dt>Cestas básicas distribuídas</dt><dd>4.920</dd></div>
+                            <div><dt>Encaminhamentos realizados</dt><dd>230</dd></div>
+                        </dl>
+                    </div>
+                </article>
+
+                <article class="cartao-projeto" id="projeto-horta-comunitaria-raizes">
+                    <figure class="cartao-projeto__imagem">
+                        <img src="assets/images/projetos/projeto-sustentabilidade.jpg"
+                             alt="Voluntários cuidando de horta comunitária"
+                             width="400" height="280" loading="lazy">
+                        <figcaption>Colheita coletiva na horta comunitária Raízes.</figcaption>
+                    </figure>
+                    <div class="cartao-projeto__conteudo">
+                        <p class="cartao-projeto__categoria"><span class="badge badge--sustentabilidade">Sustentabilidade</span></p>
+                        <h3>Horta Comunitária Raízes</h3>
+                        <p>
+                            Hortas coletivas manejadas por famílias da comunidade, que geram renda
+                            complementar por meio da venda do excedente e promovem educação
+                            ambiental para crianças e adultos.
+                        </p>
+                        <h4>Objetivos</h4>
+                        <ul class="lista-simples">
+                            <li>Gerar renda complementar para famílias participantes;</li>
+                            <li>Promover segurança alimentar com hortaliças frescas;</li>
+                            <li>Ensinar práticas de agricultura urbana sustentável.</li>
+                        </ul>
+                        <h4>Público beneficiado</h4>
+                        <p>60 famílias organizadas em quatro núcleos de horta comunitária.</p>
+                        <h4>Localização</h4>
+                        <p>Terrenos cedidos pela prefeitura em São Miguel Paulista — SP.</p>
+                        <h4>Indicadores e resultados (2025)</h4>
+                        <dl class="lista-indicadores lista-indicadores--linha">
+                            <div><dt>Famílias envolvidas</dt><dd>60</dd></div>
+                            <div><dt>Quilos de alimentos colhidos</dt><dd>3.100 kg</dd></div>
+                            <div><dt>Renda extra gerada (média/família)</dt><dd>R$ 210/mês</dd></div>
+                        </dl>
+                    </div>
+                </article>
+
+                <article class="cartao-projeto" id="projeto-jovem-aprendiz-digital">
+                    <figure class="cartao-projeto__imagem">
+                        <img src="assets/images/projetos/projeto-desenvolvimento-comunitario.jpg"
+                             alt="Jovens participando de curso de introdução à tecnologia"
+                             width="400" height="280" loading="lazy">
+                        <figcaption>Turma do curso introdutório de tecnologia, edição 2025.</figcaption>
+                    </figure>
+                    <div class="cartao-projeto__conteudo">
+                        <p class="cartao-projeto__categoria"><span class="badge badge--comunidade">Desenvolvimento comunitário</span></p>
+                        <h3>Jovem Aprendiz Digital</h3>
+                        <p>
+                            Curso introdutório de informática e primeiros passos em programação
+                            para jovens de 14 a 18 anos, preparando-os para as primeiras
+                            oportunidades de estágio e aprendizagem.
+                        </p>
+                        <h4>Objetivos</h4>
+                        <ul class="lista-simples">
+                            <li>Introduzir jovens ao uso profissional de computadores e internet;</li>
+                            <li>Apresentar noções básicas de lógica de programação;</li>
+                            <li>Encaminhar participantes para vagas de aprendiz em empresas parceiras.</li>
+                        </ul>
+                        <h4>Público beneficiado</h4>
+                        <p>70 jovens de 14 a 18 anos matriculados na rede pública de ensino.</p>
+                        <h4>Localização</h4>
+                        <p>Centro comunitário do Instituto Florescer, São Miguel Paulista — SP.</p>
+                        <h4>Indicadores e resultados (2025)</h4>
+                        <dl class="lista-indicadores lista-indicadores--linha">
+                            <div><dt>Jovens formados</dt><dd>70</dd></div>
+                            <div><dt>Encaminhados para aprendizagem</dt><dd>34</dd></div>
+                            <div><dt>Empresas parceiras</dt><dd>9</dd></div>
+                        </dl>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- voluntariado nessa pagina -->
+        <section class="secao" id="secao-voluntariado-projetos" aria-labelledby="titulo-voluntariado-projetos">
+            <div class="container secao-voluntariado__interno">
+                <div>
+                    <h2 id="titulo-voluntariado-projetos">Quer atuar em algum destes projetos?</h2>
+                    <p>
+                        Todos os projetos acima contam com voluntários em atividades diretas com
+                        as famílias e em funções de apoio, como comunicação, captação de recursos
+                        e organização de eventos.
+                    </p>
+                    <a href="cadastro.html" class="botao botao--primario">Candidatar-se a um projeto</a>
+                </div>
+                <div>
+                    <h2>Quer apoiar financeiramente?</h2>
+                    <p>
+                        Doações, únicas ou recorrentes, sustentam a compra de materiais, o
+                        transporte de famílias e a manutenção da estrutura dos projetos.
+                    </p>
+                    <a href="index.html#secao-doacoes" class="botao botao--secundario">Conhecer formas de doar</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- transparência -->
+        <section class="secao secao--destacada" id="secao-transparencia" aria-labelledby="titulo-transparencia">
+            <div class="container">
+                <h2 id="titulo-transparencia">Relatórios de transparência</h2>
+                <p>
+                    O Instituto Florescer publica anualmente relatórios de atividades e
+                    prestação de contas financeira, disponíveis para consulta pública.
+                </p>
+                <ul class="lista-documentos">
+                    <li>
+                        <a href="#">Relatório Anual de Atividades 2025 (PDF)</a>
+                        <span class="lista-documentos__meta">Publicado em <time datetime="2026-03-20">20/03/2026</time></span>
+                    </li>
+                    <li>
+                        <a href="#">Prestação de Contas Financeira 2025 (PDF)</a>
+                        <span class="lista-documentos__meta">Publicado em <time datetime="2026-03-20">20/03/2026</time></span>
+                    </li>
+                    <li>
+                        <a href="#">Relatório Anual de Atividades 2024 (PDF)</a>
+                        <span class="lista-documentos__meta">Publicado em <time datetime="2025-03-18">18/03/2025</time></span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape-site">
+        <div class="container rodape-site__interno">
+            <div>
+                <p><strong>Instituto Florescer</strong></p>
+                <p>Educação, inclusão social e desenvolvimento comunitário desde 2014.</p>
+            </div>
+            <nav aria-label="Navegação do rodapé">
+                <ul class="rodape-site__lista">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="cadastro.html">Cadastre-se</a></li>
+                    <li><a href="#secao-transparencia">Transparência</a></li>
+                </ul>
+            </nav>
+            <p class="rodape-site__copyright">
+                &copy; <time datetime="2026">2026</time> Instituto Florescer. Projeto acadêmico
+                fictício, sem fins lucrativos reais.
+            </p>
+        </div>
+    </footer>
+
+    
+    <div class="toast-area" id="toast-area" aria-live="polite"></div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

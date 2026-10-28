@@ -1,0 +1,35 @@
+/* ==========================================================================
+   FORMULÁRIOS — campos estilizados com validação visual
+   ========================================================================== */
+fieldset { border: 1px solid var(--cor-borda); border-radius: var(--raio-borda); padding: var(--espaco-3); margin: 0 0 var(--espaco-3); background: var(--cor-cartao); }
+legend { font-family: var(--fonte-titulos); font-weight: bold; font-size: var(--texto-lg); color: var(--cor-primaria-escura); padding: 0 var(--espaco-1); }
+
+.campo-formulario { margin-bottom: var(--espaco-3); }
+.campo-formulario label { display: block; font-weight: 600; margin-bottom: 6px; }
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"],
+input[type="number"], input[type="password"], select, textarea {
+    width: 100%; padding: 12px 14px; font: inherit; color: var(--cor-texto);
+    background: var(--cor-cartao); border: 2px solid var(--cor-borda); border-radius: var(--raio-borda);
+    transition: border-color var(--transicao), box-shadow var(--transicao);
+}
+input:hover, select:hover, textarea:hover { border-color: #B9B3A0; }
+input:focus, select:focus, textarea:focus { border-color: var(--cor-primaria); box-shadow: 0 0 0 3px var(--cor-primaria-100); outline: none; }
+input:disabled, select:disabled, textarea:disabled { background: #EFEDE6; color: #6F6C64; cursor: not-allowed; }
+textarea { min-height: 120px; resize: vertical; }
+
+/* Estados de validação (classes aplicadas pelo script.js) */
+.campo--valido input, .campo--valido select, .campo--valido textarea { border-color: var(--cor-sucesso); }
+.campo--erro input, .campo--erro select, .campo--erro textarea { border-color: var(--cor-erro); background: #FFF8F7; }
+.mensagem-campo { display: none; margin-top: 6px; font-size: var(--texto-sm); font-weight: 600; }
+.campo--erro .mensagem-campo { display: block; color: var(--cor-erro); }
+.campo--erro .mensagem-campo::before { content: "⚠ "; }
+.campo--valido label::after { content: " ✓"; color: var(--cor-sucesso); }
+
+.texto-ajuda { display: block; font-size: var(--texto-sm); color: var(--cor-texto-suave); margin-top: 6px; }
+
+.opcao-radio, .opcao-checkbox { display: flex; align-items: flex-start; gap: var(--espaco-1); margin-bottom: var(--espaco-1); }
+.opcao-radio input, .opcao-checkbox input { width: 20px; height: 20px; margin-top: 3px; accent-color: var(--cor-primaria); flex-shrink: 0; }
+.opcao-radio label, .opcao-checkbox label { font-weight: 400; margin: 0; }
+
+.acoes-formulario { display: flex; gap: var(--espaco-2); flex-wrap: wrap; }

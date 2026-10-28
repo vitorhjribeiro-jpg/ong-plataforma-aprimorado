@@ -1,0 +1,109 @@
+/* ==========================================================================
+   LAYOUT — estrutura geral (CSS Grid) e sistema de 12 colunas
+   ========================================================================== */
+
+/* Leiaute principal da página: cabeçalho / conteúdo / rodapé */
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 var(--espaco-3);
+}
+.container--estreito { max-width: 760px; }
+
+/* Seções */
+.secao { padding: var(--espaco-6) 0; }
+.secao--destacada, .secao--institucional { background-color: var(--cor-fundo-destacado); }
+
+/* ---------- Grid customizado de 12 colunas (mobile-first) ---------- */
+.grade-12 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--espaco-3);
+}
+.grade-12 > * { grid-column: span 12; }
+.col-1 { grid-column: span 1 !important; } .col-2 { grid-column: span 2 !important; }
+.col-3 { grid-column: span 3 !important; } .col-4 { grid-column: span 4 !important; }
+.col-5 { grid-column: span 5 !important; } .col-6 { grid-column: span 6 !important; }
+.col-7 { grid-column: span 7 !important; } .col-8 { grid-column: span 8 !important; }
+.col-9 { grid-column: span 9 !important; } .col-10 { grid-column: span 10 !important; }
+.col-11 { grid-column: span 11 !important; } .col-12 { grid-column: span 12 !important; }
+
+/* ---------- Leiautes por tipo de conteúdo ---------- */
+/* Cartões (projetos, notícias, doações) */
+.grade-cartoes {
+    display: grid;
+    gap: var(--espaco-3);
+    margin-top: var(--espaco-3);
+    grid-template-columns: 1fr;
+}
+/* Galeria: mosaico com a primeira imagem em destaque */
+.grade-galeria {
+    display: grid;
+    gap: var(--espaco-2);
+    margin-top: var(--espaco-3);
+    grid-template-columns: 1fr;
+}
+.grade-galeria figure { overflow: hidden; border-radius: var(--raio-borda); }
+.grade-galeria img { width: 100%; height: 100%; object-fit: cover; aspect-ratio: 4 / 3; transition: transform var(--transicao); }
+.grade-galeria figure:hover img { transform: scale(1.04); }
+.grade-galeria figcaption { font-size: var(--texto-xs); color: var(--cor-texto-suave); padding: var(--espaco-1) 0; }
+
+/* Texto + imagem / texto + indicadores (Flexbox nos blocos internos) */
+.secao-hero { padding: var(--espaco-6) 0; background-color: var(--cor-fundo-destacado); }
+.secao-hero__interno, .secao-historia__interno,
+.secao-voluntariado__interno, .secao-contato__interno {
+    display: flex; flex-direction: column; gap: var(--espaco-4);
+}
+.secao-hero__interno { align-items: center; }
+.secao-hero__destaque { font-size: var(--texto-lg); color: var(--cor-texto-suave); }
+.secao-hero__acoes { display: flex; gap: var(--espaco-2); flex-wrap: wrap; }
+.secao-hero__imagem img, .secao-voluntariado__imagem img { border-radius: var(--raio-borda); box-shadow: var(--sombra-2); width: 100%; }
+figcaption { font-size: var(--texto-sm); color: var(--cor-texto-suave); margin-top: var(--espaco-1); }
+
+/* Lista de projetos (projetos.html): imagem + conteúdo */
+.cartao-projeto {
+    display: flex; flex-direction: column; gap: var(--espaco-3);
+    background: var(--cor-cartao); border: 1px solid var(--cor-borda);
+    border-radius: var(--raio-borda); padding: var(--espaco-3);
+    margin-bottom: var(--espaco-4); box-shadow: var(--sombra-1);
+}
+.cartao-projeto__imagem img { border-radius: var(--raio-borda); width: 100%; }
+.cartao-projeto__categoria { margin-bottom: var(--espaco-1); }
+
+/* Indicadores */
+.lista-indicadores { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--espaco-2); margin-top: var(--espaco-2); }
+.lista-indicadores--linha { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); color: var(--cor-primaria-escura); }
+.lista-indicadores dt { font-size: var(--texto-sm); opacity: .85; }
+.lista-indicadores dd { font-size: var(--texto-xl); font-weight: bold; }
+
+/* Documentos de transparência */
+.lista-documentos { list-style: none; padding: 0; margin-top: var(--espaco-2); }
+.lista-documentos li {
+    padding: var(--espaco-2) 0; border-bottom: 1px solid var(--cor-borda);
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: var(--espaco-1);
+}
+.lista-documentos__meta { color: var(--cor-texto-suave); font-size: var(--texto-sm); }
+
+/* Rodapé */
+.rodape-site { background: var(--cor-primaria-escura); color: #E7E4D8; padding: var(--espaco-6) 0 var(--espaco-4); }
+.rodape-site__interno { display: grid; gap: var(--espaco-3); grid-template-columns: 1fr; }
+.rodape-site a { color: #fff; }
+.rodape-site__lista { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: var(--espaco-2) var(--espaco-3); }
+.rodape-site__copyright { font-size: var(--texto-xs); color: #D3CFBE; margin: 0; max-width: none; }
+
+/* Utilitários */
+.pular-para-conteudo { position: absolute; left: -999px; top: 0; background: var(--cor-primaria-escura); color: #fff; padding: var(--espaco-2); z-index: 200; }
+.pular-para-conteudo:focus { left: var(--espaco-2); top: var(--espaco-2); color: #fff; }
+.apenas-leitor-de-tela { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+.endereco-contato { font-style: normal; }
+.lista-simples, .lista-valores { padding-left: var(--espaco-3); }
+.lista-simples li, .lista-valores li { margin-bottom: var(--espaco-1); }
+.lista-redes-sociais { list-style: none; padding: 0; }
+.lista-redes-sociais li { margin-bottom: var(--espaco-1); }

@@ -1,0 +1,25 @@
+/* ==========================================================================
+   CARDS — cartões responsivos para projetos, notícias e informações
+   ========================================================================== */
+.cartao {
+    display: flex; flex-direction: column; gap: var(--espaco-1);
+    background: var(--cor-cartao); border: 1px solid var(--cor-borda);
+    border-radius: var(--raio-borda); padding: var(--espaco-3); box-shadow: var(--sombra-1);
+}
+.cartao > h3 { margin-bottom: var(--espaco-1); }
+.cartao > p:last-child { margin-bottom: 0; }
+
+/* Cartão de projeto: imagem de ponta a ponta + link no rodapé */
+.cartao--projeto { padding: 0; overflow: hidden; transition: box-shadow var(--transicao), transform var(--transicao); }
+.cartao--projeto:hover { box-shadow: var(--sombra-2); transform: translateY(-3px); }
+.cartao--projeto figure img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; }
+.cartao--projeto > h3, .cartao--projeto > p, .cartao--projeto > .badges, .cartao--projeto > a { margin-left: var(--espaco-3); margin-right: var(--espaco-3); }
+.cartao--projeto > h3 { margin-top: var(--espaco-2); }
+.cartao--projeto > a { margin-top: auto; margin-bottom: var(--espaco-3); font-weight: 700; }
+
+.cartao--indicadores { background: var(--cor-primaria-escura); color: #fff; border: 0; }
+.cartao--indicadores h2 { color: #fff; font-size: var(--texto-xl); }
+.cartao__nota { font-size: var(--texto-sm); color: var(--cor-texto-suave); margin-top: var(--espaco-2); }
+.cartao--indicadores .cartao__nota, .cartao--indicadores .cartao__nota a { color: #E7E4D8; }
+.cartao__data { font-size: var(--texto-sm); color: var(--cor-secundaria-escura); font-weight: bold; margin-bottom: 0; }
+.cartao__nota--destaque { background: var(--cor-secundaria-100); border-left: 4px solid var(--cor-secundaria); padding: var(--espaco-2); border-radius: var(--raio-borda); }

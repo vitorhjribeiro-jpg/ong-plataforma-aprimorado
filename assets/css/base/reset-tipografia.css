@@ -1,0 +1,41 @@
+/* Reset e tipografia hierárquica */
+*, *::before, *::after { box-sizing: border-box; }
+body, h1, h2, h3, h4, p, ul, ol, dl, dd, figure { margin: 0; }
+img { max-width: 100%; height: auto; display: block; }
+button { font: inherit; }
+
+html { scroll-behavior: smooth; scroll-padding-top: var(--altura-cabecalho); }
+
+body {
+    font-family: var(--fonte-corpo);
+    font-size: var(--texto-base);
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--fonte-titulos);
+    color: var(--cor-primaria-escura);
+    line-height: 1.25;
+    margin-bottom: var(--espaco-2);
+}
+h1 { font-size: var(--texto-3xl); }
+h2 { font-size: var(--texto-2xl); }
+h3 { font-size: var(--texto-xl); }
+h4 { font-size: var(--texto-lg); color: var(--cor-texto); }
+
+p { margin-bottom: var(--espaco-2); max-width: 70ch; }
+a { color: var(--cor-primaria); }
+a:hover, a:focus { color: var(--cor-primaria-escura); }
+
+a:focus-visible, button:focus-visible, input:focus-visible,
+select:focus-visible, textarea:focus-visible {
+    outline: 3px solid var(--cor-secundaria);
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { transition: none !important; animation: none !important; }
+}

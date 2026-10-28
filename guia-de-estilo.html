@@ -1,0 +1,190 @@
+<!-- Vitor Hugo de Jesus Ribeiro -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de estilo | Instituto Florescer</title>
+    <meta name="description" content="Design system do Instituto Florescer: cores, tipografia, espaçamento, grid e componentes.">
+    <link rel="stylesheet" href="assets/css/base/variaveis.css">
+    <link rel="stylesheet" href="assets/css/base/reset-tipografia.css">
+    <link rel="stylesheet" href="assets/css/layout/grid.css">
+    <link rel="stylesheet" href="assets/css/layout/navegacao.css">
+    <link rel="stylesheet" href="assets/css/componentes/botoes.css">
+    <link rel="stylesheet" href="assets/css/componentes/cards.css">
+    <link rel="stylesheet" href="assets/css/componentes/badges-tags.css">
+    <link rel="stylesheet" href="assets/css/componentes/formularios.css">
+    <link rel="stylesheet" href="assets/css/componentes/feedback.css">
+    <link rel="stylesheet" href="assets/css/responsivo.css">
+    <style>
+        .amostra { height: 56px; border: 1px solid var(--cor-borda); border-radius: var(--raio-borda); }
+        .amostra__nome { font-size: var(--texto-xs); margin: 6px 0 0; }
+        .espaco { display: flex; align-items: center; gap: 16px; margin-bottom: 8px; }
+        .espaco span { display: block; height: 16px; background: var(--cor-primaria); }
+        .col-demo { background: var(--cor-primaria-100); border: 1px dashed var(--cor-primaria); border-radius: var(--raio-borda); padding: 8px; text-align: center; font-weight: 700; }
+        .demo-linha { display: flex; flex-wrap: wrap; gap: var(--espaco-2); align-items: center; margin-bottom: var(--espaco-3); }
+    </style>
+</head>
+<body>
+    <a href="#conteudo-principal" class="pular-para-conteudo">Pular para o conteúdo principal</a>
+    <header class="cabecalho-site">
+        <div class="container cabecalho-site__interno">
+            <a href="index.html" class="logotipo" aria-label="Instituto Florescer - página inicial">
+                <img src="assets/images/logo/logo-instituto-florescer.png"
+                     alt="Logotipo do Instituto Florescer: um broto de planta dentro de um círculo verde"
+                     width="48" height="48">
+                <span class="logotipo__texto">Instituto Florescer</span>
+            </a>
+
+            <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
+                <span class="menu-toggle__barra"></span><span class="menu-toggle__barra"></span><span class="menu-toggle__barra"></span>
+            </button>
+
+            <nav class="navegacao-principal" id="menu-principal" aria-label="Navegação principal">
+                <ul class="navegacao-principal__lista">
+                    <li><a href="index.html">Início</a></li>
+                    <li class="tem-submenu">
+                        <button type="button" class="submenu-botao" aria-expanded="false" aria-haspopup="true">Projetos</button>
+                        <ul class="submenu">
+                            <li><a href="projetos.html">Todos os projetos</a></li>
+                            <li><a href="projetos.html#projeto-educar-para-crescer">Educar para Crescer</a></li>
+                            <li><a href="projetos.html#projeto-caminhos-da-inclusao">Caminhos da Inclusão</a></li>
+                            <li><a href="projetos.html#projeto-apoio-as-familias">Apoio às Famílias</a></li>
+                            <li><a href="projetos.html#projeto-horta-comunitaria-raizes">Horta Comunitária Raízes</a></li>
+                            <li><a href="projetos.html#projeto-jovem-aprendiz-digital">Jovem Aprendiz Digital</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="cadastro.html">Cadastre-se</a></li>
+                    <li><a href="index.html#secao-doacoes" class="botao-doar">Doe agora</a></li>
+                    <li><a href="index.html#secao-contato">Contato</a></li>
+                    <li><a href="guia-de-estilo.html" aria-current="page">Guia de estilo</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="conteudo-principal">
+        <section class="secao-hero secao-hero--interna" aria-labelledby="titulo-pagina">
+            <div class="container">
+                <h1 id="titulo-pagina">Guia de estilo</h1>
+                <p class="secao-hero__destaque">Cores, tipografia, espaçamento, grid e componentes usados em toda a plataforma.</p>
+            </div>
+        </section>
+
+        <section class="secao" aria-labelledby="t-cores"><div class="container">
+            <h2 id="t-cores">Paleta de cores</h2>
+            <div class="grade-12"><div class="col-6 col-sm-4 col-md-3"><div class="amostra" style="background:var(--cor-primaria-100)"></div><p class="amostra__nome">Primária 100<br><code>--cor-primaria-100</code></p></div>
+<div class="col-6 col-sm-4 col-md-3"><div class="amostra" style="background:var(--cor-primaria)"></div><p class="amostra__nome">Primária<br><code>--cor-primaria</code></p></div>
+<div class="col-6 col-sm-4 col-md-3"><div class="amostra" style="background:var(--cor-primaria-escura)"></div><p class="amostra__nome">Primária escura<br><code>--cor-primaria-escura</code></p></div>
+<div class="col-6 col-sm-4 col-md-3"><div class="amostra" style="background:var(--cor-secundaria-100)"></div><p class="amostra__nome">Secundária 100<br><code>--cor-secundaria-100</code></p></div>
+<div class="col-6 col-sm-4 col-md-3"><div class="amostra" style="background:var(--cor-secundaria)"></div><p class="amostra__nome">Secundária<br><code>--cor-secundaria</code></p></div>
+<div class="col-6 col-sm-4 col-md-3"><div class="amostra" style="background:var(--cor-secundaria-escura)"></div><p class="amostra__nome">Secundária escura<br><code>--cor-secundaria-escura</code></p></div>
+<div class="col-6 col-sm-4 col-md-3"><div class="amostra" style="background:var(--cor-fundo)"></div><p class="amostra__nome">Fundo<br><code>--cor-fundo</code></p></div>
+<div class="col-6 col-sm-4 col-md-3"><div class="amostra" style="background:var(--cor-fundo-destacado)"></div><p class="amostra__nome">Fundo destacado<br><code>--cor-fundo-destacado</code></p></div>
+<div class="col-6 col-sm-4 col-md-3"><div class="amostra" style="background:var(--cor-borda)"></div><p class="amostra__nome">Borda<br><code>--cor-borda</code></p></div>
+<div class="col-6 col-sm-4 col-md-3"><div class="amostra" style="background:var(--cor-texto)"></div><p class="amostra__nome">Texto<br><code>--cor-texto</code></p></div>
+<div class="col-6 col-sm-4 col-md-3"><div class="amostra" style="background:var(--cor-texto-suave)"></div><p class="amostra__nome">Texto suave<br><code>--cor-texto-suave</code></p></div>
+<div class="col-6 col-sm-4 col-md-3"><div class="amostra" style="background:var(--cor-sucesso)"></div><p class="amostra__nome">Sucesso<br><code>--cor-sucesso</code></p></div>
+<div class="col-6 col-sm-4 col-md-3"><div class="amostra" style="background:var(--cor-erro)"></div><p class="amostra__nome">Erro<br><code>--cor-erro</code></p></div>
+<div class="col-6 col-sm-4 col-md-3"><div class="amostra" style="background:var(--cor-aviso)"></div><p class="amostra__nome">Aviso<br><code>--cor-aviso</code></p></div>
+<div class="col-6 col-sm-4 col-md-3"><div class="amostra" style="background:var(--cor-info)"></div><p class="amostra__nome">Info<br><code>--cor-info</code></p></div></div>
+        </div></section>
+
+        <section class="secao secao--destacada" aria-labelledby="t-tipo"><div class="container grade-12">
+            <div class="col-md-6"><h2 id="t-tipo">Tipografia</h2><p style="font-size:var(--texto-3xl);max-width:none;margin-bottom:8px">Título 1 — 40px</p>
+<p style="font-size:var(--texto-2xl);max-width:none;margin-bottom:8px">Título 2 — 32px</p>
+<p style="font-size:var(--texto-xl);max-width:none;margin-bottom:8px">Título 3 — 25px</p>
+<p style="font-size:var(--texto-lg);max-width:none;margin-bottom:8px">Título 4 — 20px</p>
+<p style="font-size:var(--texto-base);max-width:none;margin-bottom:8px">Texto base — 16px</p>
+<p style="font-size:var(--texto-sm);max-width:none;margin-bottom:8px">Texto pequeno — 15px</p>
+<p style="font-size:var(--texto-xs);max-width:none;margin-bottom:8px">Legenda — 13px</p></div>
+            <div class="col-md-6"><h2>Espaçamento</h2><div class="espaco"><span style="width:var(--espaco-1)"></span><code>--espaco-1 · 8px</code></div>
+<div class="espaco"><span style="width:var(--espaco-2)"></span><code>--espaco-2 · 16px</code></div>
+<div class="espaco"><span style="width:var(--espaco-3)"></span><code>--espaco-3 · 24px</code></div>
+<div class="espaco"><span style="width:var(--espaco-4)"></span><code>--espaco-4 · 32px</code></div>
+<div class="espaco"><span style="width:var(--espaco-6)"></span><code>--espaco-6 · 48px</code></div>
+<div class="espaco"><span style="width:var(--espaco-8)"></span><code>--espaco-8 · 64px</code></div></div>
+        </div></section>
+
+        <section class="secao" aria-labelledby="t-grid"><div class="container">
+            <h2 id="t-grid">Grid de 12 colunas</h2>
+            <p>Classes <code>.col-N</code>, <code>.col-sm-N</code>, <code>.col-md-N</code> e <code>.col-lg-N</code> dentro de <code>.grade-12</code>.</p>
+            <div class="grade-12"><div class="col-3"><div class="col-demo">3</div></div><div class="col-3"><div class="col-demo">3</div></div><div class="col-3"><div class="col-demo">3</div></div><div class="col-3"><div class="col-demo">3</div></div><div class="col-4"><div class="col-demo">4</div></div><div class="col-8"><div class="col-demo">8</div></div><div class="col-6"><div class="col-demo">6</div></div><div class="col-6"><div class="col-demo">6</div></div></div>
+        </div></section>
+
+        <section class="secao secao--destacada" aria-labelledby="t-botoes"><div class="container">
+            <h2 id="t-botoes">Botões</h2>
+            <div class="demo-linha">
+                <button class="botao botao--primario" type="button">Primário</button>
+                <button class="botao botao--secundario" type="button">Secundário</button>
+                <button class="botao botao--destaque" type="button">Destaque</button>
+                <button class="botao botao--perigo" type="button">Perigo</button>
+                <button class="botao botao--primario" type="button" disabled>Desabilitado</button>
+            </div>
+            <p class="texto-ajuda">Passe o mouse (hover), use Tab (focus) e clique (active) para ver os estados.</p>
+        </div></section>
+
+        <section class="secao" aria-labelledby="t-badges"><div class="container">
+            <h2 id="t-badges">Badges e tags</h2>
+            <p class="badges"><span class="badge badge--educacao">Educação</span><span class="badge badge--inclusao">Inclusão social</span><span class="badge badge--familias">Apoio a famílias</span><span class="badge badge--sustentabilidade">Sustentabilidade</span><span class="badge badge--comunidade">Desenvolvimento comunitário</span><span class="badge badge--neutro">Neutro</span></p>
+            <ul class="lista-categorias"><li><a href="#" class="tag tag--ativa">Todos</a></li><li><a href="#" class="tag">Educação</a></li><li><a href="#" class="tag">Inclusão</a></li><li><a href="#" class="tag">Sustentabilidade</a></li></ul>
+        </div></section>
+
+        <section class="secao secao--destacada" aria-labelledby="t-feedback"><div class="container">
+            <h2 id="t-feedback">Feedback: alerts, toasts e modal</h2>
+            <div class="alerta alerta--sucesso"><div class="alerta__conteudo"><span class="alerta__titulo">Tudo certo</span><p>Sua doação foi registrada.</p></div><button type="button" class="alerta__fechar" aria-label="Fechar aviso">&times;</button></div>
+            <div class="alerta alerta--erro"><div class="alerta__conteudo"><span class="alerta__titulo">Algo deu errado</span><p>Não foi possível salvar. Tente novamente.</p></div><button type="button" class="alerta__fechar" aria-label="Fechar aviso">&times;</button></div>
+            <div class="alerta alerta--aviso"><div class="alerta__conteudo"><span class="alerta__titulo">Atenção</span><p>As inscrições encerram sexta-feira.</p></div><button type="button" class="alerta__fechar" aria-label="Fechar aviso">&times;</button></div>
+            <div class="alerta alerta--info"><div class="alerta__conteudo"><span class="alerta__titulo">Informação</span><p>Novos projetos serão publicados em novembro.</p></div><button type="button" class="alerta__fechar" aria-label="Fechar aviso">&times;</button></div>
+            <div class="demo-linha">
+                <button type="button" class="botao botao--secundario" data-toast="Voluntário cadastrado!" data-toast-tipo="sucesso">Mostrar toast de sucesso</button>
+                <button type="button" class="botao botao--secundario" data-toast="Falha ao enviar o formulário." data-toast-tipo="erro">Mostrar toast de erro</button>
+                <button type="button" class="botao botao--primario" data-abrir-modal="modal-demo">Abrir modal</button>
+            </div>
+        </div></section>
+
+        <section class="secao" aria-labelledby="t-cards"><div class="container">
+            <h2 id="t-cards">Cards de projeto</h2>
+            <div class="grade-cartoes grade-cartoes--tres-colunas">
+                <article class="cartao cartao--projeto"><figure><img src="assets/images/projetos/projeto-educacao.jpg" alt="Voluntária auxiliando crianças em atividade de leitura" width="360" height="240" loading="lazy"></figure><h3>Educar para Crescer</h3><p class="badges"><span class="badge badge--educacao">Educação</span></p><p>Reforço escolar e incentivo à leitura.</p><a href="projetos.html#projeto-educar-para-crescer">Conhecer o projeto</a></article>
+                <article class="cartao cartao--projeto"><figure><img src="assets/images/projetos/projeto-sustentabilidade.jpg" alt="Voluntários cuidando de horta comunitária" width="360" height="240" loading="lazy"></figure><h3>Horta Comunitária Raízes</h3><p class="badges"><span class="badge badge--sustentabilidade">Sustentabilidade</span></p><p>Hortas coletivas e educação ambiental.</p><a href="projetos.html#projeto-horta-comunitaria-raizes">Conhecer o projeto</a></article>
+                <article class="cartao cartao--projeto"><figure><img src="assets/images/projetos/projeto-inclusao.jpg" alt="Jovens participando de oficina de inclusão profissional" width="360" height="240" loading="lazy"></figure><h3>Caminhos da Inclusão</h3><p class="badges"><span class="badge badge--inclusao">Inclusão social</span></p><p>Capacitação profissional para pessoas com deficiência.</p><a href="projetos.html#projeto-caminhos-da-inclusao">Conhecer o projeto</a></article>
+            </div>
+        </div></section>
+
+        <section class="secao secao--destacada" aria-labelledby="t-form"><div class="container container--estreito">
+            <h2 id="t-form">Campos de formulário</h2>
+            <div class="campo-formulario"><label for="d1">Campo normal</label><input type="text" id="d1" placeholder="Digite algo"></div>
+            <div class="campo-formulario campo--valido"><label for="d2">Campo válido</label><input type="text" id="d2" value="Maria Silva"></div>
+            <div class="campo-formulario campo--erro"><label for="d3">Campo com erro</label><input type="text" id="d3" value="abc" aria-invalid="true"><span class="mensagem-campo">Informe um e-mail válido.</span></div>
+            <div class="campo-formulario"><label for="d4">Campo desabilitado</label><input type="text" id="d4" value="Somente leitura" disabled></div>
+        </div></section>
+    </main>
+
+    <div class="modal" id="modal-demo" role="dialog" aria-modal="true" aria-labelledby="t-modal">
+        <div class="modal__caixa"><h2 id="t-modal">Exemplo de modal</h2><p>Feche com o botão, clicando fora ou pressionando Esc.</p>
+        <div class="modal__acoes"><button type="button" class="botao botao--primario" data-fechar-modal>Entendi</button></div></div>
+    </div>
+    <div class="toast-area" id="toast-area" aria-live="polite"></div>
+    <footer class="rodape-site">
+        <div class="container rodape-site__interno">
+            <div>
+                <p><strong>Instituto Florescer</strong></p>
+                <p>Educação, inclusão social e desenvolvimento comunitário desde 2014.</p>
+            </div>
+            <nav aria-label="Navegação do rodapé">
+                <ul class="rodape-site__lista">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="cadastro.html">Cadastre-se</a></li>
+                    <li><a href="projetos.html#secao-transparencia">Transparência</a></li>
+                </ul>
+            </nav>
+            <p class="rodape-site__copyright">
+                &copy; <time datetime="2026">2026</time> Instituto Florescer. Projeto acadêmico
+                fictício, sem fins lucrativos reais.
+            </p>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

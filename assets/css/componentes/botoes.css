@@ -1,0 +1,33 @@
+/* ==========================================================================
+   BOTÕES — estados: normal, hover, focus, active e disabled
+   ========================================================================== */
+.botao {
+    display: inline-flex; align-items: center; justify-content: center; gap: var(--espaco-1);
+    padding: 12px var(--espaco-3); border: 2px solid transparent; border-radius: var(--raio-borda);
+    font-size: var(--texto-base); font-weight: 700; line-height: 1.2; text-decoration: none; cursor: pointer;
+    transition: background-color var(--transicao), border-color var(--transicao), transform var(--transicao), box-shadow var(--transicao);
+}
+.botao:hover { box-shadow: var(--sombra-1); }
+.botao:active { transform: translateY(1px); box-shadow: none; }
+
+.botao--primario { background: var(--cor-primaria); color: #fff; }
+.botao--primario:hover { background: var(--cor-primaria-escura); color: #fff; }
+.botao--primario:active { background: #0D3A21; }
+.botao--primario:focus-visible { outline-color: var(--cor-secundaria); }
+
+.botao--secundario { background: transparent; color: var(--cor-primaria-escura); border-color: var(--cor-primaria); }
+.botao--secundario:hover { background: var(--cor-primaria-100); }
+.botao--secundario:active { background: #C6E2D1; }
+
+.botao--destaque { background: var(--cor-secundaria); color: #1B1205; }
+.botao--destaque:hover { background: #EBA362; color: #1B1205; }
+
+.botao--perigo { background: var(--cor-erro); color: #fff; }
+.botao--perigo:hover { background: #8E1D17; color: #fff; }
+
+.botao--pequeno { padding: 8px var(--espaco-2); font-size: var(--texto-sm); }
+
+.botao:disabled, .botao[aria-disabled="true"] {
+    background: #E6E3DA; color: #6F6C64; border-color: #E6E3DA;
+    cursor: not-allowed; box-shadow: none; transform: none; opacity: .9;
+}

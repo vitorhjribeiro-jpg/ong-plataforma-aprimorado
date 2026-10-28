@@ -1,0 +1,56 @@
+/* ==========================================================================
+   DESIGN SYSTEM — variáveis (tokens)
+   Paleta (12 cores), tipografia (7 tamanhos) e espaçamento modular (8px)
+   ========================================================================== */
+:root {
+    /* Cores primárias (verde) */
+    --cor-primaria-100: #DDEFE4;
+    --cor-primaria: #1F6F43;
+    --cor-primaria-escura: #14512F;
+
+    /* Cores secundárias (laranja) */
+    --cor-secundaria-100: #FBE9D7;
+    --cor-secundaria: #E08E45;
+    --cor-secundaria-escura: #9A5420; /* contraste AA sobre branco */
+
+    /* Cores neutras */
+    --cor-fundo: #FAF9F6;
+    --cor-fundo-destacado: #F0EDE4;
+    --cor-cartao: #FFFFFF;
+    --cor-borda: #DDD8CB;
+    --cor-texto: #262624;
+    --cor-texto-suave: #55534E;
+
+    /* Cores de feedback */
+    --cor-sucesso: #1B7A3E;
+    --cor-erro: #B3261E;
+    --cor-aviso: #8A5A00;
+    --cor-info: #1F5FA8;
+
+    /* Tipografia */
+    --fonte-titulos: Georgia, 'Times New Roman', serif;
+    --fonte-corpo: 'Segoe UI', Verdana, Arial, sans-serif;
+    --texto-xs: 0.8125rem;   /* 13px */
+    --texto-sm: 0.9375rem;   /* 15px */
+    --texto-base: 1rem;      /* 16px */
+    --texto-lg: 1.25rem;     /* 20px */
+    --texto-xl: 1.5625rem;   /* 25px */
+    --texto-2xl: 2rem;       /* 32px */
+    --texto-3xl: 2.5rem;     /* 40px */
+
+    /* Espaçamento modular */
+    --espaco-1: 8px;
+    --espaco-2: 16px;
+    --espaco-3: 24px;
+    --espaco-4: 32px;
+    --espaco-6: 48px;
+    --espaco-8: 64px;
+
+    /* Outros */
+    --raio-borda: 6px;
+    --raio-pilula: 999px;
+    --sombra-1: 0 1px 3px rgba(20, 81, 47, .12);
+    --sombra-2: 0 8px 24px rgba(20, 81, 47, .16);
+    --transicao: 160ms ease;
+    --altura-cabecalho: 72px;
+}
