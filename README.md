@@ -11,7 +11,7 @@ em etapas futuras da disciplina, aprofundamento em **CSS3** e **JavaScript**.
 > para fins de estudo. Não há back-end, banco de dados, autenticação ou
 > gateway de pagamento reais.
 >
-> Site publicado: https://vitorhjribeiro-jpg.github.io/ong-plataforma/
+ **Site publicado:** https://vitorhjribeiro-jpg.github.io/ong-plataforma-aprimorado/
 
 ---
 
@@ -234,4 +234,5 @@ Foram utilizadas imagens dispobíveis em sites do google. Nenhuma imagem represe
 Projeto acadêmico desenvolvido para fins de estudo de HTML5, CSS3 e
 JavaScript.
 
-Autor: Vitor Hugo de Jesus Ribeiro GitHub: vitorhjribeiro-jpg
+**Autor:** Vitor Hugo de Jesus Ribeiro
+**GitHub:** [vitorhjribeiro-jpg](https://github.com/vitorhjribeiro-jpg)
